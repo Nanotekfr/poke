@@ -14,5 +14,5 @@ e2e/**/*.js.map
 _test-output
 _temp
 package.json
-parkage-lock.json
+package-lock.json
 bs-config.json
