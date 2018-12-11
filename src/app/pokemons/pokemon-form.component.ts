@@ -12,6 +12,7 @@ export class PokemonFormComponent implements OnInit {
 
 	@Input() pokemon: Pokemon; // propriété d'entrée du composant
 	types: Array<string>; // types disponibles pour un pokémon : 'Eau', 'Feu', etc ...
+
 	constructor(
 		private pokemonsService: PokemonsService,
 		private router: Router) { }
@@ -46,7 +47,7 @@ export class PokemonFormComponent implements OnInit {
 		if (this.pokemon.types.length === 1 && this.hasType(type)) {
 			return false;
 		}
-		if (this.pokemon.types.length >= 3  && !this.hasType(type)) {
+		if (this.pokemon.types.length === 2  && !this.hasType(type)) {
 			return false;
 		}
 
@@ -55,7 +56,6 @@ export class PokemonFormComponent implements OnInit {
 
 	// La méthode appelée lorsque le formulaire est soumis.
 	onSubmit(): void {
-		console.log("Submit form !");
 		this.pokemonsService.updatePokemon(this.pokemon)
 		.subscribe(() => this.goBack());
 	}
