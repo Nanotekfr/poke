@@ -51,8 +51,8 @@
                 <!-- Pokemon types -->
                 <div class="form-group">
                     <label for="types">Types :</label>
-                    <div class="row">
-                        <input type="checkbox"
+                    <div *ngFor="let type of types" class="row">
+                        <input type="color"
                             class="filled-in"
                             id="{{ type }}"
                             [value]="type"
