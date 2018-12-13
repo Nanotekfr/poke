@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import { Pokemon } from './pokemon';
-import { PokemonsService } from './pokemons.service';
+import { Pokemon } from '../pokemon';
+import { PokemonsService } from '../pokemons.service';
 
 @Component({
     selector: 'edit-pokemon',
-    templateUrl: './app/pokemons/edit-pokemon.component.html'
+    templateUrl: './app/pokemons/edit/edit-pokemon.component.html'
 })
 export class EditPokemonComponent implements OnInit {
 

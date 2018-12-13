@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, Params } from '@angular/router';
-import { Pokemon } from './pokemon';
-import { POKEMONS } from "./mock-pokemons";
-import { PokemonsService } from './pokemons.service';
+import { Pokemon } from '../pokemon';
+import { POKEMONS } from "../mock-pokemons";
+import { PokemonsService } from '../pokemons.service';
 
 @Component({
 	selector: 'detail-pokemon',
-	templateUrl: './app/pokemons/detail-pokemon.component.html'
+	templateUrl: './app/pokemons/detail/detail-pokemon.component.html'
 })
 export class DetailPokemonComponent implements OnInit {
 

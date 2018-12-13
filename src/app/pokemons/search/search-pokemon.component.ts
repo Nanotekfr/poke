@@ -6,12 +6,12 @@ import { of } from 'rxjs/Observable/of';
 import { 
     debounceTime, distinctUntilChanged, switchMap 
 } from 'rxjs/operators';
-import { PokemonsService } from './pokemons.service';
-import { Pokemon } from './pokemon';
+import { PokemonsService } from '../pokemons.service';
+import { Pokemon } from '../pokemon';
 
 @Component({
 	selector: 'pokemon-search',
-	templateUrl: './app/pokemons/search-pokemon.component.html'
+	templateUrl: './app/pokemons/search/search-pokemon.component.html'
 })
 export class PokemonSearchComponent implements OnInit {
 

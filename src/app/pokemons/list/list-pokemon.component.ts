@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { Pokemon } from './pokemon';
-import { POKEMONS } from "./mock-pokemons";
+import { Pokemon } from '../pokemon';
+import { POKEMONS } from "../mock-pokemons";
 import { Router } from '@angular/router';
-import { PokemonsService } from "./pokemons.service";
+import { PokemonsService } from "../pokemons.service";
 
 
 @Component({
 	selector: 'list-pokemon',
-	templateUrl: `./app/pokemons/list-pokemon.component.html`
+	templateUrl: `./app/pokemons/list/list-pokemon.component.html`
 })
 export class ListPokemonComponent implements OnInit { 
     pokemons: Pokemon[] = null;

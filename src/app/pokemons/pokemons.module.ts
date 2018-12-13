@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 import { PokemonRoutingModule } from "./pokemons-routing.module";
 import { FormsModule } from '@angular/forms';
 
-import { ListPokemonComponent } from './list-pokemon.component';
-import { DetailPokemonComponent } from './detail-pokemon.component';
-import { EditPokemonComponent } from "./edit-pokemon.component";
-import { PokemonFormComponent } from "./pokemon-form.component";
-import { PokemonSearchComponent } from './search-pokemon.component';
-import { LoaderComponent } from '../loader.component';
+import { ListPokemonComponent } from './list/list-pokemon.component';
+import { DetailPokemonComponent } from './detail/detail-pokemon.component';
+import { EditPokemonComponent } from "./edit/edit-pokemon.component";
+import { PokemonFormComponent } from "./form/pokemon-form.component";
+import { PokemonSearchComponent } from './search/search-pokemon.component';
+import { LoaderComponent } from '../loader/loader.component';
 import { BorderCardDirective } from './border-card.directive';
 import { PokemonTypeColorPipe } from './pokemon-type-color.pipe';
 import { PokemonsService } from './pokemons.service';

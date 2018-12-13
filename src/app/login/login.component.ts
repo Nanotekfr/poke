@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthService } from './auth.service';
+import { AuthService } from '../auth.service';
 
 @Component({
 	selector: 'login',
-	templateUrl:'./app/login.component.html'
+	templateUrl:'./app/login/login.component.html'
 })
 export class LoginComponent {
-	message: string = 'Vous êtes déconnecté.';
+	message: string = 'Vous êtes déconnecté.(admin/admin)';
 	private name: string;
 	private password: string;
 
