@@ -35,7 +35,7 @@ export class PokemonsService {
     /** GET types */
     getPokemonTypes(): string[] {
         return ['Acier','Combat','Dragon','Eau','Electrik','Fée','Feu','Glace','Insecte',
-        /* 'Normal','Plante','Poison','Psy','Roche','Sol','Spectre','Ténèbre','Vol' */];
+        'Normal','Plante','Poison','Psy','Roche','Sol','Spectre','Ténèbre','Vol'];
     }
     
     /** SEARCH pokemon */
